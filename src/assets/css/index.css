@@ -1,0 +1,543 @@
+:root {
+  --main-color: #3d3a38;
+  --second-color: #04df6c;
+  --third-color: #2e45cc;
+  --light-grey-color: #b1b0b0;
+
+  --navbar-height: 60px;
+}
+
+/* FONTS */
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* RESET RULES */
+body {
+  margin: 0;
+  color: var(--main-color);
+}
+
+header {
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  font-family: "Monserrat", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 2.2rem;
+}
+
+#ducks-description-section,
+#ducks-collection-section,
+#faqs-section,
+#reviews-section,
+#general-informations-section,
+#newsletter-section {
+  padding: var(--navbar-height) 0.5rem 0 0.5rem;
+}
+
+/* GENERAL RULES */
+.txt-center {
+  text-align: center;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+/* HEADER */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: white;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+
+  height: var(--navbar-height);
+}
+
+#logo {
+  width: 40px;
+}
+
+.visibility-sidebar-btn {
+  padding: 0.5rem;
+  border: none;
+  background-color: inherit;
+  font-size: 1.5rem;
+}
+
+.nav-btn-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.nav-btn {
+  padding: 0.5rem 1rem;
+  background-color: inherit;
+  border: none;
+}
+
+/* SIDEBAR */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  min-width: 300px;
+  height: 100vh;
+  padding: 0.5rem 0.5rem 1rem;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  background-color: white;
+}
+
+#sidebar.show {
+  transform: translateX(0);
+}
+
+#sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.navigation-item {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* MAIN */
+/* HERO SECTION */
+#hero-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.banner-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-img-container img {
+  display: block;
+}
+
+.banner-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-image: url("img/banner-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-section-title {
+  margin: 1rem 1rem 0 1rem;
+  font-size: 2.6rem;
+}
+
+.hero-section-content {
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  line-height: 1.24rem;
+  margin: 1rem;
+}
+
+.banner-content-container div {
+  margin: 1rem;
+}
+
+.hero-section-btn {
+  padding: 1rem 2.5rem;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  font-size: 1.1rem;
+  background-color: inherit;
+
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-section-btn:hover {
+  background-color: #222529;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* DUCKS STRENGTH POINTS SECTION */
+#ducks-description-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.ducks-description {
+  margin: 2.5rem 0;
+}
+
+.ducks-description h3,
+.ducks-description p {
+  margin: 0.3rem;
+}
+
+.ducks-description h3 {
+  font-size: 1.4rem;
+}
+
+.ducks-description p {
+  letter-spacing: 0.1rem;
+}
+
+#ducks-description-img,
+#ducks-description-img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* REVIEWS SECTiON */
+.swiper-slide {
+  height: auto !important;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.review-content {
+  flex-grow: 1;
+}
+
+.review p {
+  font-size: 1.2rem;
+  margin: 0 1rem;
+}
+.fa-star {
+  margin-top: 0.5rem;
+  color: rgb(248, 180, 53);
+  font-size: 0.7rem;
+}
+
+.author-date {
+  margin-top: 0.5rem;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #777;
+}
+
+.swiper-pagination {
+  position: relative !important;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  margin-top: 1rem;
+}
+
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+/* DUCKS COLLECTION */
+#ducks-collection-section,
+#ducks-collection-section > p {
+  margin: 0 0 2.5rem 0;
+}
+
+.ducks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* DUCK CARD */
+.duck-card {
+  text-align: start;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.duck-card:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.duck-img img {
+  width: 100%;
+  display: block;
+}
+
+.duck-vote {
+  padding-top: 0.3rem;
+}
+
+.duck-name {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.duck-price {
+  font-size: 1.5rem;
+  color: var(--second-color);
+  font-weight: bolder;
+}
+
+/* FAQS SECTION */
+#faqs-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#faqs-img img {
+  width: 100%;
+}
+
+#faqs-content {
+  text-align: start;
+}
+
+#faqs-content h2 {
+  margin-top: 0;
+}
+
+.faq-item {
+  transition: all 0.3s ease;
+}
+
+.summary-content {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.summary-content h3 {
+  font-size: 1.3rem;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.answer-wrapper {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.answer-wrapper p {
+  padding: 1rem;
+  margin: 0;
+}
+
+.answer-wrapper.open {
+  border-top: 1px solid var(--light-grey-color);
+  max-height: 300px;
+  opacity: 1;
+}
+
+/* GENERAL INFORMATION SECTION */
+#general-informations-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  margin: 5rem 0;
+}
+
+#general-informations-section i {
+  color: var(--third-color);
+}
+
+.info h3 {
+  font-size: 1.4rem;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.info p {
+  margin: 0;
+}
+
+/* NEwSLETTER SECTION */
+#newsletter-section {
+  background-color: #f8f8f8;
+}
+
+.subscribe-newsletter {
+  display: flex;
+  border-bottom: 1px solid var(--light-grey-color);
+  margin: 2.5rem 0;
+}
+
+#send-mail-input,
+#send-mail-btn {
+  padding: 0.7rem;
+  background-color: inherit;
+}
+
+#send-mail-input {
+  border: none;
+  flex: 1;
+  font-size: 1rem;
+}
+
+#send-mail-btn {
+  border: none;
+  color: var(--second-color);
+}
+
+.social-btn {
+  color: var(--second-color);
+  background-color: inherit;
+  margin: 0.5rem;
+  padding: 0.7rem;
+  width: 50px;
+  height: 50px;
+  font-size: 1rem;
+  border: 1px solid var(--light-grey-color);
+  border-radius: 50%;
+}
+
+.social-btn:hover {
+  background-color: var(--second-color);
+  color: inherit;
+}
+
+/* MEDIAQUERY */
+@media screen and (min-width: 768px) {
+  /* GENERAL RULES */
+  .d-md-none {
+    display: none;
+  }
+
+  .d-md-block {
+    display: block;
+  }
+
+  .d-md-flex {
+    display: flex;
+  }
+
+  /* HERO SECTION */
+  #hero-section {
+    flex-direction: row;
+    margin-top: var(--navbar-height);
+  }
+
+  #hero-section .banner-img-container,
+  #hero-section .banner-content-container {
+    max-height: 450px;
+    width: 50%;
+  }
+
+  /* DUCKS STRENGHT POINTS */
+  #ducks-description-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  /* DUCKS COLLECTION */
+  .ducks-list {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  /* FAQS SECTION */
+  #faqs-section {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #faqs-img {
+    width: 40%;
+  }
+
+  #faqs-content {
+    width: 60%;
+  }
+
+  /* GENERAL INFORMATION SECTION */
+  #general-informations-section {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .info {
+    padding: 1rem;
+    width: 33%;
+  }
+
+  .info:nth-child(2) {
+    border-left: 1px solid var(--light-grey-color);
+    border-right: 1px solid var(--light-grey-color);
+  }
+
+  /* NEWSLETTER SECTION */
+  #newsletter-section {
+    padding: 0 200px;
+  }
+}
