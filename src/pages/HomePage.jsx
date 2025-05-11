@@ -82,19 +82,19 @@ export default function HomePage() {
       question:
         "Quali sono i vantaggi di usare una paperella di gomma per i programmatori?",
       answer:
-        "Il rubber duck debugging è semplice: spiega il tuo codice alla paperella di gomma come se fosse un collega. Descrivendo ogni passo, potresti individuare errori o capire meglio il problema. La paperella non risponde, ma ti aiuta a chiarire i tuoi pensieri.",
+        "Usare una paperella di gomma migliora la comprensione del codice, favorisce l'autonomia nella risoluzione dei problemi e riduce il bisogno di assistenza esterna. È uno strumento utile per sviluppare il pensiero critico e l'autodidattica.",
     },
     {
       question:
         "Posso usare la paperella di gomma indipendentemente dal linguaggio di programmazione che utilizzo?",
       answer:
-        "Il rubber duck debugging è semplice: spiega il tuo codice alla paperella di gomma come se fosse un collega. Descrivendo ogni passo, potresti individuare errori o capire meglio il problema. La paperella non risponde, ma ti aiuta a chiarire i tuoi pensieri.",
+        "Assolutamente sì! La tecnica del rubber duck debugging è indipendente dal linguaggio: puoi spiegare codice in JavaScript, Python, Java, C++ o qualsiasi altro linguaggio. L'importante è verbalizzare il processo logico.",
     },
     {
       question:
         "Quanto dettagliatamente devo spiegare il mio codice alla paperella di gomma?",
       answer:
-        "Il rubber duck debugging è semplice: spiega il tuo codice alla paperella di gomma come se fosse un collega. Descrivendo ogni passo, potresti individuare errori o capire meglio il problema. La paperella non risponde, ma ti aiuta a chiarire i tuoi pensieri.",
+        "Più sei dettagliato, meglio è. Descrivi ogni riga, il perché delle tue scelte e cosa ti aspetti che il codice faccia. Questo ti aiuterà a notare eventuali incoerenze o errori logici durante la spiegazione.",
     },
   ];
 
