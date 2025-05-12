@@ -267,11 +267,11 @@ export default function HomePage() {
                 >
                   <h3 className="question-content">{q.question}</h3>
                   <span className="icon">
-                    {isFaqOpen[i] ? (
-                      <i className="fa-solid fa-minus"></i>
-                    ) : (
-                      <i className="fa-solid fa-plus"></i>
-                    )}
+                    <i
+                      className={
+                        "fa-solid " + (isFaqOpen[i] ? "fa-minus" : "fa-plus")
+                      }
+                    ></i>
                   </span>
                 </div>
                 <div className={`answer-wrapper ${isFaqOpen[i] ? "open" : ""}`}>
@@ -335,21 +335,21 @@ export default function HomePage() {
           </div>
 
           <div className="social-list">
-            <button className="social-btn">
+            <a href="" className="social-btn">
               <i className="fa-brands fa-facebook-f fa-xl"></i>
-            </button>
-            <button className="social-btn">
+            </a>
+            <a href="" className="social-btn">
               <i className="fa-brands fa-twitter fa-xl"></i>
-            </button>
-            <button className="social-btn">
+            </a>
+            <a href="" className="social-btn">
               <i className="fa-brands fa-youtube fa-xl"></i>
-            </button>
-            <button className="social-btn">
+            </a>
+            <a href="" className="social-btn">
               <i className="fa-brands fa-linkedin-in fa-xl"></i>
-            </button>
-            <button className="social-btn">
+            </a>
+            <a href="" className="social-btn">
               <i className="fa-brands fa-instagram fa-xl"></i>
-            </button>
+            </a>
           </div>
         </section>
 

@@ -6,7 +6,6 @@ import DefaultLayout from "./layouts/DefaultLayout";
 import { DataContextProvider } from "./context/dataContext";
 
 import HomePage from "./pages/HomePage";
-import AboutUsPage from "./pages/AboutUsPage";
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
           <Routes>
             <Route Component={DefaultLayout}>
               <Route index Component={HomePage} />
-              <Route path="/aboutUs" Component={AboutUsPage} />
             </Route>
           </Routes>
         </BrowserRouter>

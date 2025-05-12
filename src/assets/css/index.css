@@ -191,6 +191,7 @@ h2 {
   background-image: url("img/banner-bg.png");
   background-size: cover;
   background-position: center;
+  height: 450px;
 }
 
 .hero-section-title {
@@ -538,6 +539,6 @@ h2 {
 
   /* NEWSLETTER SECTION */
   #newsletter-section {
-    padding: 0 200px;
+    padding: 1rem 200px;
   }
 }
